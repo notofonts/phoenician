@@ -1,0 +1,6 @@
+languagesystem DFLT dflt;
+languagesystem phnx dflt;
+
+lookup astupidlookupsowehaveagsubtable {
+	sub space by space;
+} astupidlookupsowehaveagsubtable;
