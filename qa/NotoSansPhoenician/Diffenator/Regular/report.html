@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+	.box-title{
+	  width: 100%;
+	  float: left;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	  display: block;
+	  font-weight: 700;
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari */        
+	  -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* IE10+/Edge */
+	  user-select: none; /* Standard */
+	  text-align: center;
+	  color: white;
+	  background-color: black;
+	  width: 50px;
+	  display: block;
+	  padding: 10px;
+	}
+	.tooltip {
+	z-index: 1;
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	font-size: 10pt;
+	line-height: 13pt;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1000;
+	}
+	.tooltip .tooltiptext {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+	.tooltip:hover .tooltiptext {
+	visibility: visible;
+	}
+	           /* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-before{
+                color: red;
+                cursor: text;
+            }
+            .attrib-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .before .cell .after {
+            	display:  none;
+            }
+            .after .cell .before {
+            	display:  none;
+            }
+            .both .cell .before {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .after {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+
+	  
+	    @font-face { font-family: before; src: url(before.ttf); }
+	  
+
+	  
+	    @font-face { font-family: after; src: url(after.ttf); }
+	  
+
+	  
+
+	  
+	    .before { font-family: before; }
+	  
+
+	  
+	    .after { font-family: after; }
+	  
+
+	  
+	
+.cell{
+  position: relative;
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="nav">
+        <div id="font-toggle">Before</div>
+     </div>
+    
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     
+<div class="node" >
+OS/2
+  <div class="node" style="display:none">
+  usMaxContext
+    <span class="attrib-before">0</span> <span class="attrib-after">1</span>
+  </div>
+</div>
+<div class="node" >
+GSUB
+  <div class="node" style="display:none">
+  tableTag
+    <span class="attrib-before">None</span> <span class="attrib-after">GSUB</span>
+  </div>
+  <div class="node" style="display:none">
+  table
+    <div class="node" style="display:none">
+    Version
+      <span class="attrib-before">None</span> <span class="attrib-after">65536</span>
+    </div>
+    <div class="node" style="display:none">
+    ScriptList
+      <div class="node" style="display:none">
+      ScriptCount
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    FeatureList
+      <div class="node" style="display:none">
+      FeatureCount
+        <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+      </div>
+    </div>
+    <div class="node" style="display:none">
+    LookupList
+      <div class="node" style="display:none">
+      LookupCount
+        <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+      </div>
+      <div class="node" style="display:none">
+      Lookup
+        <div class="node" style="display:none">
+        [0]
+          <div class="node" style="display:none">
+          LookupType
+            <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+          </div>
+          <div class="node" style="display:none">
+          LookupFlag
+            <span class="attrib-before">None</span> <span class="attrib-after">0</span>
+          </div>
+          <div class="node" style="display:none">
+          SubTableCount
+            <span class="attrib-before">None</span> <span class="attrib-after">1</span>
+          </div>
+          <div class="node" style="display:none">
+          SubTable
+            <div class="node" style="display:none">
+            [0]
+              <div class="node" style="display:none">
+              mapping
+                <div class="node" style="display:none">
+                space
+                  <span class="attrib-before">None</span> <span class="attrib-after">space</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="node" >
+head
+  <div class="node" style="display:none">
+  checkSumAdjustment
+    <span class="attrib-before">3893561682</span> <span class="attrib-after">2665989198</span>
+  </div>
+  <div class="node" style="display:none">
+  modified
+    <span class="attrib-before">3746422861</span> <span class="attrib-after">3758771253</span>
+  </div>
+</div>
+    </div>
+	    
+       </div>
+    
+    </div>
+
+    
+    <div class="box">
+      <div class="box-title">Fea</div>
+      
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type"
+          content="text/html; charset=utf-8" />
+    <title></title>
+    <style type="text/css">
+        table.diff {font-family:Courier; border:medium;}
+        .diff_header {background-color:#e0e0e0}
+        td.diff_header {text-align:right}
+        .diff_next {background-color:#c0c0c0}
+        .diff_add {background-color:#aaffaa}
+        .diff_chg {background-color:#ffff77}
+        .diff_sub {background-color:#ffaaaa}
+    </style>
+</head>
+
+<body>
+    
+    <table class="diff" id="difflib_chg_to0__top"
+           cellspacing="0" cellpadding="0" rules="groups" >
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        <colgroup></colgroup> <colgroup></colgroup> <colgroup></colgroup>
+        
+        <tbody>
+            <tr><td class="diff_next" id="difflib_chg_to0__0"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="from0_1">1</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td><td class="diff_next"><a href="#difflib_chg_to0__0">f</a></td><td class="diff_header" id="to0_1">1</td><td nowrap="nowrap">table&nbsp;GDEF&nbsp;{</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td><td class="diff_next"></td><td class="diff_header" id="to0_2">2</td><td nowrap="nowrap">&nbsp;&nbsp;&nbsp;&nbsp;GlyphClassDef&nbsp;[],&nbsp;[],&nbsp;[],&nbsp;[];</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_3">3</td><td nowrap="nowrap">}&nbsp;GDEF;</td><td class="diff_next"></td><td class="diff_header" id="to0_3">3</td><td nowrap="nowrap">}&nbsp;GDEF;</td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_4">4</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_4">4</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header" id="from0_5">5</td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_5">5</td><td nowrap="nowrap"></td></tr>
+            <tr><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"><a href="#difflib_chg_to0__top">t</a></td><td class="diff_header" id="to0_6">6</td><td nowrap="nowrap"><span class="diff_add">lookup&nbsp;SingleSubstitution1&nbsp;{</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_7">7</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;lookupflag&nbsp;0;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_8">8</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_9">9</td><td nowrap="nowrap"><span class="diff_add">&nbsp;&nbsp;&nbsp;&nbsp;sub&nbsp;space&nbsp;by&nbsp;space;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_10">10</td><td nowrap="nowrap"><span class="diff_add">}&nbsp;SingleSubstitution1;</span></td></tr>
+            <tr><td class="diff_next"></td><td class="diff_header"></td><td nowrap="nowrap"></td><td class="diff_next"></td><td class="diff_header" id="to0_11">11</td><td nowrap="nowrap"><span class="diff_add">&nbsp;</span></td></tr>
+        </tbody>
+    </table>
+    <table class="diff" summary="Legends">
+        <tr> <th colspan="2"> Legends </th> </tr>
+        <tr> <td> <table border="" summary="Colors">
+                      <tr><th> Colors </th> </tr>
+                      <tr><td class="diff_add">&nbsp;Added&nbsp;</td></tr>
+                      <tr><td class="diff_chg">Changed</td> </tr>
+                      <tr><td class="diff_sub">Deleted</td> </tr>
+                  </table></td>
+             <td> <table border="" summary="Links">
+                      <tr><th colspan="2"> Links </th> </tr>
+                      <tr><td>(f)irst change</td> </tr>
+                      <tr><td>(n)ext change</td> </tr>
+                      <tr><td>(t)op</td> </tr>
+                  </table></td> </tr>
+    </table>
+</body>
+
+</html>
+    </div>
+    
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "before"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	  items = document.getElementsByClassName("box");
+	  console.log("Click from "+POSITION)
+	  
+	  if (POSITION === "before") {
+	  POSITION = "after"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("before", "after")
+            item.lastElementChild.className = item.lastElementChild.className.replace("before", "after")
+	    fontToggle.textContent = "After"
+	  }
+	  } else if (POSITION === "after") {
+	  POSITION = "both"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("after", "both")
+            item.lastElementChild.className = item.lastElementChild.className.replace("after", "both")
+	    fontToggle.textContent = "Both"
+	  }
+
+	  } else {
+	  POSITION = "before"
+	  for (item of items) {
+	    item.firstElementChild.textContent = item.firstElementChild.textContent.replace("both", "before")
+            item.lastElementChild.className = item.lastElementChild.className.replace("both", "before")
+	    fontToggle.textContent = "Before"
+	  }
+	}
+	}
+	fontToggle.addEventListener("click", switchFonts);
+	</script>
+    <script>
+    const divs = document.querySelectorAll('.node');
+    divs.forEach(el => el.addEventListener('click', event => {
+    var children = event.target.querySelectorAll(".node");
+    children.forEach(function(e) {
+        if (e.style.display === "none") {
+            e.style.display = "block";
+        } else {
+            e.style.display = "none";
+        }
+    })
+    }));
+    </script>
+</html>
